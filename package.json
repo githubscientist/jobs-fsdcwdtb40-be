@@ -1,0 +1,40 @@
+{
+  "name": "jobs-fsdcwdtb40-be",
+  "version": "1.0.0",
+  "description": "This is a Job Portal Application that is built using React for the frontend and Node.js with Express for the backend. The application allows users to browse job listings, apply for jobs, and manage their profiles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubscientist/jobs-fsdcwdtb40-be.git"
+  },
+  "keywords": [
+    "nodejs",
+    "job",
+    "portal",
+    "jobs",
+    "expressjs",
+    "mongodb",
+    "restful",
+    "api",
+    "mongoose"
+  ],
+  "author": "Sathish Gnanaprakasam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubscientist/jobs-fsdcwdtb40-be/issues"
+  },
+  "homepage": "https://github.com/githubscientist/jobs-fsdcwdtb40-be#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.2"
+  }
+}
