@@ -39,7 +39,7 @@ const createCompany = async (req, res) => {
 
 const getAllCompanies = async (req, res) => {
     try {
-        const companies = await Company.find().populate('createdBy', 'name');
+        const companies = await Company.find().populate('createdBy', 'name email');
 
         res.status(200).json({ companies });
     } catch (error) {
