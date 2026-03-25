@@ -3,6 +3,7 @@ const authRouter = require('./routes/authRoutes');
 const cookieParser = require('cookie-parser');
 const errorRoute = require('./middlewares/errorRoute');
 const logger = require('./middlewares/logger');
+const companyRouter = require('./routes/companyRoutes');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(cookieParser());
 app.use(logger);
 
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/companies', companyRouter);
 
 // middleware to handle undefined routes
 app.use(errorRoute);
