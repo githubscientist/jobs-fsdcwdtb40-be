@@ -27,3 +27,23 @@ Admin Features:
 - Manage Companies (Create, Update, View, Delete)
 - Manage Recruiters (Create, Update, View, Delete)
 - Assign Recruiters to Companies
+
+Sample Job:
+
+```
+{
+  "title": "Software Engineer",
+  "description": "We are looking for a skilled Software Engineer to join our team.",
+  "requirements": [
+    "Bachelor's degree in Computer Science or related field",
+    "3+ years of experience in software development",
+    "Proficiency in JavaScript and React"
+  ],
+  "salary": "$80,000 - $100,000",
+    "location": "New York, NY",
+    "jobType": "Full-time",
+    "experienceLevel": "Mid",
+    "skills": ["JavaScript", "React", "Node.js"],
+    "applicationDeadline": "2026-07-31",
+}
+```
