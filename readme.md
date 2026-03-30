@@ -47,3 +47,23 @@ Sample Job:
     "applicationDeadline": "2026-07-31",
 }
 ```
+
+Sample Job:
+
+```
+{
+  "title": "Data Analyst",
+  "description": "We are seeking a Data Analyst to help us make data-driven decisions.",
+  "requirements": [
+    "Bachelor's degree in Data Science or related field",
+    "2+ years of experience in data analysis",
+    "Proficiency in SQL and Python"
+  ],
+  "salary": "$60,000 - $80,000",
+    "location": "San Francisco, CA",
+    "jobType": "Full-time",
+    "experienceLevel": "Entry",
+    "skills": ["SQL", "Python", "Data Visualization"],
+    "applicationDeadline": "2026-08-15",
+}
+```

@@ -37,7 +37,7 @@ const applyForJob = async (req, res) => {
         await newApplication.save();
 
         // update the job applications count
-        await Job.findByIdAndUpdate(jobId, { $inc: { applicationsCount: 1 } });
+        await Job.findByIdAndUpdate(jobId, { $inc: { applicationCount: 1 } });
 
         // send notification to employer 
         // sendMail(job.postedBy.email, 'New Job Application', `You have received a new application for your job: ${job.title}`);
@@ -55,7 +55,11 @@ const getUserApplications = async (req, res) => {
         const applications = await Application.find({ applicant: userId }).populate({
             path: 'job',
             populate: 'company',
-            select: 'name logo'
+            select: 'title description location jobType experienceLevel company',
+            populate: {
+                path: 'company',
+                select: 'name logo'
+            }
         })
             .sort({ createdAt: -1 });
 
@@ -67,13 +71,13 @@ const getUserApplications = async (req, res) => {
 
 const updateApplicationStatus = async (req, res) => {
     try {
-        const { applicantId } = req.params;
+        const { applicationId } = req.params;
         const { notes, status } = req.body;
 
         const userId = req.userId;
 
         // find the application
-        const application = await Application.findOne({ applicant: applicantId })
+        const application = await Application.findById(applicationId)
             .populate({
                 path: 'job',
                 populate: {

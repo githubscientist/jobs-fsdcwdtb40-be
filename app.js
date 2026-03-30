@@ -6,8 +6,14 @@ const logger = require('./middlewares/logger');
 const companyRouter = require('./routes/companyRoutes');
 const jobRouter = require('./routes/jobRoutes');
 const applicationRouter = require('./routes/applicationRoutes');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials: true,
+}));
 
 // middleware to parse the body of incoming requests as JSON
 app.use(express.json());
