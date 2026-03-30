@@ -1,6 +1,6 @@
 # View API Documentation
 
-![API Documentation](https://documenter.getpostman.com/view/29191458/2sBXinHAVm)
+[API Documentation](https://documenter.getpostman.com/view/29191458/2sBXinHAVm)
 
 # Job Portal Application
 
