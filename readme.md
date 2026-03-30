@@ -1,3 +1,7 @@
+# View API Documentation
+
+![API Documentation](https://documenter.getpostman.com/view/29191458/2sBXinHAVm)
+
 # Job Portal Application
 
 This is a Job Portal Application that is built using React for the frontend and Node.js with Express for the backend. The application allows users to browse job listings, apply for jobs, and manage their profiles.
